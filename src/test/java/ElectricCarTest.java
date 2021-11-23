@@ -20,7 +20,7 @@ public class ElectricCarTest {
     @Test
     public void hasTyres() {
         assertEquals(tyres, electricCar.getTyres());
-        assertEquals(18, electricCar.-a getTyres().getSize());
+        assertEquals(18, electricCar.getTyres().getSize());
         assertEquals(40, electricCar.getTyres().getPsi());
     }
 
@@ -30,7 +30,14 @@ public class ElectricCarTest {
     }
 
     @Test
-    public void
+    public void hasColour() {
+        assertEquals("red", electricCar.getColour());
+    }
+
+    @Test
+    public void hasEngine() {
+        assertEquals("electric", electricCar.getEngine().getType());
+    }
 
 
 }
